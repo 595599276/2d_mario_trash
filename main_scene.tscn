@@ -1,0 +1,152 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhlgu83ai2a0b"]
+
+[ext_resource type="PackedScene" uid="uid://duxvb6cqjabkb" path="res://player.tscn" id="1_jd42f"]
+[ext_resource type="PackedScene" uid="uid://csdvbmhfe0ole" path="res://tile.tscn" id="2_n46p5"]
+[ext_resource type="PackedScene" uid="uid://basonnuv2avac" path="res://enemy.tscn" id="3_wxa3r"]
+[ext_resource type="PackedScene" uid="uid://cfrk136bfatf5" path="res://coin.tscn" id="4_4ev0q"]
+[ext_resource type="Script" path="res://CameraController.gd" id="5_mbsr2"]
+[ext_resource type="PackedScene" uid="uid://c5s62ftvxjc44" path="res://ui.tscn" id="6_tkps7"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_jd42f")]
+
+[node name="Tile" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(32, 608)
+
+[node name="Tile2" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(96, 608)
+
+[node name="Tile3" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(160, 608)
+
+[node name="Tile4" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(224, 608)
+
+[node name="Tile5" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(288, 608)
+
+[node name="Tile6" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(352, 608)
+
+[node name="Tile7" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(416, 608)
+
+[node name="Tile8" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(480, 608)
+
+[node name="Tile9" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(544, 608)
+
+[node name="Tile10" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(608, 608)
+
+[node name="Tile11" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(672, 608)
+
+[node name="Tile12" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(736, 608)
+
+[node name="Tile13" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(800, 608)
+
+[node name="Tile14" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(864, 608)
+
+[node name="Tile15" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(928, 608)
+
+[node name="Tile16" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(992, 608)
+
+[node name="Tile17" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(1056, 608)
+
+[node name="Tile18" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(1120, 608)
+
+[node name="Tile19" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(224, 544)
+
+[node name="Tile23" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(224, 544)
+
+[node name="Tile20" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(992, 544)
+
+[node name="Tile21" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(1120, 416)
+
+[node name="Tile22" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(416, 416)
+
+[node name="Tile24" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(544, 352)
+
+[node name="Tile25" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(608, 352)
+
+[node name="Tile26" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(672, 352)
+
+[node name="Tile27" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(736, 352)
+
+[node name="Tile28" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(800, 352)
+
+[node name="Tile29" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(864, 352)
+
+[node name="Tile30" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(928, 352)
+
+[node name="Tile31" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(288, 288)
+
+[node name="Tile32" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(224, 288)
+
+[node name="Tile33" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(160, 288)
+
+[node name="Tile34" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(96, 288)
+
+[node name="Tile35" parent="." instance=ExtResource("2_n46p5")]
+position = Vector2(32, 288)
+
+[node name="Enemy" parent="." instance=ExtResource("3_wxa3r")]
+position = Vector2(291, 542)
+speed = 400
+moveDist = 640
+
+[node name="Coin" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(265, 221)
+
+[node name="Coin2" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(551, 288)
+
+[node name="Coin3" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(929, 290)
+
+[node name="Coin4" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(1118, 544)
+
+[node name="Coin5" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(120, 538)
+
+[node name="Coin6" parent="." instance=ExtResource("4_4ev0q")]
+position = Vector2(1117, 351)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 319)
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0
+script = ExtResource("5_mbsr2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("6_tkps7")]
